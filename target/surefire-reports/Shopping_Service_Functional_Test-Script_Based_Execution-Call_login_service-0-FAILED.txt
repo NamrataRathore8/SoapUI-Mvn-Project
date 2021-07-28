@@ -1,0 +1,26 @@
+Status: FAILED
+Time Taken: 4377
+Size: 0
+Timestamp: Wed Jul 28 15:31:50 IST 2021
+TestStep: Call login service
+
+----------------- Messages ------------------------------
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+
+----------------- Properties ------------------------------
+Endpoint: http://LAPTOP-599MBC9C:8088/mockShoppingServiceSoapBinding
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://expertz.me/data/eCommerce/ShoppingService/1.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:loginRequest>
+         <ns:username>Sunil</ns:username>
+         <ns:password>Welcome1</ns:password>
+      </ns:loginRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -

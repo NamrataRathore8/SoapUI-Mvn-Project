@@ -1,0 +1,8 @@
+Status: FAILED
+Time Taken: 1248
+Size: 0
+Timestamp: Wed Jul 28 15:31:48 IST 2021
+TestStep: Maria Db
+
+----------------- Messages ------------------------------
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'global_priv'

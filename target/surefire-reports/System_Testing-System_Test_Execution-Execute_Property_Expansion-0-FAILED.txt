@@ -1,0 +1,12 @@
+Status: FAILED
+Time Taken: 4698
+Size: 0
+Timestamp: Wed Jul 28 15:31:55 IST 2021
+TestStep: Execute Property Expansion
+Error:groovy.lang.MissingPropertyException: No such property: result for class: com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner
+Possible solutions: results
+
+----------------- Messages ------------------------------
+groovy.lang.MissingPropertyException: No such property: result for class: com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner
+Possible solutions: results
+error at line: 21

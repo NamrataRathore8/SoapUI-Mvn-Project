@@ -1,0 +1,546 @@
+2021-07-28 15:31:09,003 WARN  [SoapUI] Missing folder [C:\Users\Admin\Desktop\SoapUI Project\my-project\ext] for external libraries
+2021-07-28 15:31:09,786 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Admin\soapui-settings.xml]
+2021-07-28 15:31:14,058 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Admin/Desktop/SoapUI%20Project/my-project/ShoppingService-soapui-project.xml]
+2021-07-28 15:31:16,058 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [ShoppingService]
+2021-07-28 15:31:16,061 INFO  [SoapUITestCaseRunner] Running Project [ShoppingService], runType = SEQUENTIAL
+2021-07-28 15:31:16,158 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [find TestCase]
+2021-07-28 15:31:16,171 INFO  [SoapUITestCaseRunner] running step [find]
+2021-07-28 15:31:20,653 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:20,655 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:20,672 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:21,302 ERROR [SoapUITestCaseRunner] find failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\ShoppingServiceSoapBinding_TestSuite-find_TestCase-find-0-FAILED.txt]
+2021-07-28 15:31:21,368 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [find TestCase], time taken: 4827ms, status: FAILED
+2021-07-28 15:31:21,371 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [login TestCase]
+2021-07-28 15:31:21,372 INFO  [SoapUITestCaseRunner] running step [login]
+2021-07-28 15:31:25,398 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:25,401 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:25,402 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:25,675 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2021-07-28 15:31:25,676 ERROR [SoapUITestCaseRunner] login failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\ShoppingServiceSoapBinding_TestSuite-login_TestCase-login-0-FAILED.txt]
+2021-07-28 15:31:25,686 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [login TestCase], time taken: 4300ms, status: FAILED
+2021-07-28 15:31:25,690 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [logout TestCase]
+2021-07-28 15:31:25,691 INFO  [SoapUITestCaseRunner] running step [logout]
+2021-07-28 15:31:29,705 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:29,708 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:29,709 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:29,955 ERROR [SoapUITestCaseRunner] logout failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\ShoppingServiceSoapBinding_TestSuite-logout_TestCase-logout-0-FAILED.txt]
+2021-07-28 15:31:29,965 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [logout TestCase], time taken: 4261ms, status: FAILED
+2021-07-28 15:31:29,970 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [purchase TestCase]
+2021-07-28 15:31:29,972 INFO  [SoapUITestCaseRunner] running step [purchase]
+2021-07-28 15:31:33,985 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:33,989 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:33,990 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:34,240 ERROR [SoapUITestCaseRunner] purchase failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\ShoppingServiceSoapBinding_TestSuite-purchase_TestCase-purchase-0-FAILED.txt]
+2021-07-28 15:31:34,258 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [purchase TestCase], time taken: 4266ms, status: FAILED
+2021-07-28 15:31:34,268 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Traditional login and logout]
+2021-07-28 15:31:34,270 INFO  [SoapUITestCaseRunner] running step [Username and password properties]
+2021-07-28 15:31:34,367 INFO  [SoapUITestCaseRunner] running step [Transfer Username and Password]
+2021-07-28 15:31:35,189 INFO  [SoapUITestCaseRunner] running step [Call login service]
+2021-07-28 15:31:39,204 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:39,207 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:39,209 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:39,451 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2021-07-28 15:31:39,452 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2021-07-28 15:31:39,453 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2021-07-28 15:31:39,456 ERROR [SoapUITestCaseRunner] Call login service failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\Shopping_Service_Functional_Test-Traditional_login_and_logout-Call_login_service-0-FAILED.txt]
+2021-07-28 15:31:39,461 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Traditional login and logout], time taken: 5168ms, status: FAILED
+2021-07-28 15:31:39,467 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Property Expansion login and logout]
+2021-07-28 15:31:39,468 INFO  [SoapUITestCaseRunner] running step [Username and password properties]
+2021-07-28 15:31:39,470 INFO  [SoapUITestCaseRunner] running step [Call login service]
+2021-07-28 15:31:43,484 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:43,487 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:43,488 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:43,710 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2021-07-28 15:31:43,711 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2021-07-28 15:31:43,712 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2021-07-28 15:31:43,715 ERROR [SoapUITestCaseRunner] Call login service failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\Shopping_Service_Functional_Test-Property_Expansion_login_and_logout-Call_login_service-0-FAILED.txt]
+2021-07-28 15:31:43,737 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Property Expansion login and logout], time taken: 4239ms, status: FAILED
+2021-07-28 15:31:43,744 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Script Based Execution]
+2021-07-28 15:31:43,745 INFO  [SoapUITestCaseRunner] running step [Username and password properties]
+2021-07-28 15:31:43,746 INFO  [SoapUITestCaseRunner] running step [Call login service]
+2021-07-28 15:31:47,778 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:47,783 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:47,786 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 24 more
+2021-07-28 15:31:48,033 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2021-07-28 15:31:48,034 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2021-07-28 15:31:48,035 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2021-07-28 15:31:48,035 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status UNKNOWN
+2021-07-28 15:31:48,038 ERROR [SoapUITestCaseRunner] Call login service failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\Shopping_Service_Functional_Test-Script_Based_Execution-Call_login_service-0-FAILED.txt]
+2021-07-28 15:31:48,047 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Script Based Execution], time taken: 4285ms, status: FAILED
+2021-07-28 15:31:48,051 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Database Testing]
+2021-07-28 15:31:48,055 INFO  [SoapUITestCaseRunner] running step [Maria Db]
+2021-07-28 15:31:49,033 ERROR [SoapUI] An error occurred [Unknown database 'global_priv'], see error log for details
+2021-07-28 15:31:49,033 ERROR [errorlog] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'global_priv'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'global_priv'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.eviware.soapui.support.jdbc.JdbcUtils.initConnection(JdbcUtils.java:72)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.getDatabaseConnection(JdbcSubmit.java:222)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.prepare(JdbcSubmit.java:265)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.runQuery(JdbcSubmit.java:201)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.run(JdbcSubmit.java:165)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.<init>(JdbcSubmit.java:79)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcRequest.submit(JdbcRequest.java:131)
+	at com.eviware.soapui.impl.wsdl.teststeps.JdbcRequestTestStep.run(JdbcRequestTestStep.java:209)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-28 15:31:49,307 ERROR [SoapUITestCaseRunner] Maria Db failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\Shopping_Service_Functional_Test-Database_Testing-Maria_Db-0-FAILED.txt]
+2021-07-28 15:31:49,312 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Database Testing], time taken: 1248ms, status: FAILED
+2021-07-28 15:31:49,320 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [System Test Execution]
+2021-07-28 15:31:49,321 INFO  [SoapUITestCaseRunner] running step [System Test]
+2021-07-28 15:31:50,611 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Script Based Execution]
+2021-07-28 15:31:50,612 INFO  [SoapUITestCaseRunner] running step [Username and password properties]
+2021-07-28 15:31:50,616 INFO  [SoapUITestCaseRunner] running step [Call login service]
+2021-07-28 15:31:54,630 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:54,633 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:54,634 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.start(AbstractTestRunner.java:81)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase.run(WsdlTestCase.java:645)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase.run(WsdlTestCase.java:77)
+	at com.eviware.soapui.model.testsuite.TestCase$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at Script1.run(Script1.groovy:23)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:100)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:154)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 39 more
+2021-07-28 15:31:54,995 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2021-07-28 15:31:54,997 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2021-07-28 15:31:54,998 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2021-07-28 15:31:54,999 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status UNKNOWN
+2021-07-28 15:31:55,000 ERROR [SoapUITestCaseRunner] Call login service failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\Shopping_Service_Functional_Test-Script_Based_Execution-Call_login_service-0-FAILED.txt]
+2021-07-28 15:31:55,008 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Script Based Execution], time taken: 4377ms, status: FAILED
+2021-07-28 15:31:55,010 INFO  [SoapUITestCaseRunner] running step [Execute Property Expansion]
+2021-07-28 15:31:55,086 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Property Expansion login and logout]
+2021-07-28 15:31:55,091 INFO  [SoapUITestCaseRunner] running step [Username and password properties]
+2021-07-28 15:31:55,092 INFO  [SoapUITestCaseRunner] running step [Call login service]
+2021-07-28 15:31:59,110 ERROR [WsdlSubmit] Exception in request: org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+2021-07-28 15:31:59,113 ERROR [SoapUI] An error occurred [Connection to http://LAPTOP-599MBC9C:8088 refused], see error log for details
+2021-07-28 15:31:59,114 ERROR [errorlog] org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+org.apache.http.conn.HttpHostConnectException: Connection to http://LAPTOP-599MBC9C:8088 refused
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:332)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.start(AbstractTestRunner.java:81)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase.run(WsdlTestCase.java:645)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase.run(WsdlTestCase.java:77)
+	at com.eviware.soapui.model.testsuite.TestCase$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at Script1.run(Script1.groovy:11)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:100)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:154)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:365)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:310)
+	... 39 more
+2021-07-28 15:31:59,482 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2021-07-28 15:31:59,483 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2021-07-28 15:31:59,485 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2021-07-28 15:31:59,487 ERROR [SoapUITestCaseRunner] Call login service failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\Shopping_Service_Functional_Test-Property_Expansion_login_and_logout-Call_login_service-0-FAILED.txt]
+2021-07-28 15:31:59,496 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Property Expansion login and logout], time taken: 4386ms, status: FAILED
+2021-07-28 15:31:59,523 INFO  [log] Status: FAILED
+2021-07-28 15:31:59,527 INFO  [log] Time taken for execution 4386 ms
+2021-07-28 15:31:59,560 INFO  [log] Number of Test Step Executed 2
+2021-07-28 15:31:59,583 ERROR [SoapUI] An error occurred [No such property: result for class: com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner
+Possible solutions: results], see error log for details
+2021-07-28 15:31:59,590 ERROR [errorlog] groovy.lang.MissingPropertyException: No such property: result for class: com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner
+Possible solutions: results
+groovy.lang.MissingPropertyException: No such property: result for class: com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner
+Possible solutions: results
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:50)
+	at org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite.getProperty(GetEffectivePojoPropertySite.java:63)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGetProperty(AbstractCallSite.java:227)
+	at Script1.run(Script1.groovy:21)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:100)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:154)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-28 15:31:59,714 ERROR [SoapUITestCaseRunner] Execute Property Expansion failed, exporting to [C:\Users\Admin\Desktop\SoapUI Project\my-project\target/surefire-reports\System_Testing-System_Test_Execution-Execute_Property_Expansion-0-FAILED.txt]
+2021-07-28 15:31:59,734 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [System Test Execution], time taken: 10385ms, status: FAILED
+2021-07-28 15:31:59,737 INFO  [SoapUITestCaseRunner] Project [ShoppingService] finished with status [FAILED] in 43669ms
